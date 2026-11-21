@@ -12,3 +12,8 @@ i've included `train.dat` and `test.dat` for ease of use, but you can generate t
 `nasm -f elf64 main.asm && ld main.o && ./a.out`
 
 the classifier will run on each vector in `./test.dat`, then report its accuracy.
+
+## todos
+- gracefully handle `mmap` errors
+- avoid hardcoding `./train.dat`, `./test.dat` paths
+- add a python helper that classifies your tui drawing with mnistasm?
